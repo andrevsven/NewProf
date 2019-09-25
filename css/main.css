@@ -263,6 +263,7 @@ header {
   font-size: 18px;
   line-height: 21px;
   margin-top: 40px;
+  border: 1px solid #FFFFFF;
 }
 
 .modal {
