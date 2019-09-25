@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Главная</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	
+
+</head>
+<body>	
+	<header>
+	<div class="wrapper">
+		<div class="header-wrap">
+			<div class="logo">
+				<a href="index.html"><p><span class="white">Pata</span>kamax studio</p></a>
+			</div>
+			<div class="menu">
+			<ul class="menu-right">
+				<a href="work.html"><li>Последние работы</li></a>
+				<a href="price.html"><li>Стоимость работ</li></a>
+				</ul>
+				<button class="btn">Закзать</button>
+			</div>
+		</div>
+	</div>
+	</header>
+<section>
+		<div class="wrapper">
+			<div class="fon">
+				<div class="fon-text">
+				<p><span class="white">Качественный</span> landing-page за 5 дней!</p>
+				<small><span class="white">Делаем современные landing-page и</span> логотипы</small>
+			</div>
+			<div class="but"><button onclick="show('block')">Заказать</button></div>
+			<img class="img_pis" src="img/pis.png" alt="none">
+			<img class="img_pis1" src="img/pis1.png" alt="none">
+			</div>
+			</div>	
+</section>
+
+<div id="window" class="modal">
+	<div class="modal-content">
+		<div class="close" onclick="show('none')">&times;</div>
+		<h5>Форма заказа</h5>
+		<div class="modal-form">
+			<form action="">
+				<input type="name" class="form-inp" placeholder="Ваше имя"><br>
+				<input type="email" class="form-inp" placeholder="Ваша почта"><br>
+				<input type="text" class="form-inp" placeholder="Окно для отправки тз"><br>	
+				<div class="form-value">
+					
+				<input class="chec" id="tarif1" type="radio" name="tarif" ><label for="tarif1"><span class="form-tax fon11">Тариф 15</span></label>
+				
+			
+				<input class="chec" id="tarif2" type="radio" name="tarif" ><label  for="tarif2"><span class="form-tax fon22">Тариф 10</span></label>
+				
+			
+				<input class="chec" id="tarif3" type="radio" name="tarif" ><label for="tarif3"><span class="form-tax fon33">Тариф 5</span></label>
+			
+			
+			</div>
+				<textarea class="form-text" name="message" cols="40" rows="6" required ></textarea><br>
+				<button type="submit" class="btn-form">Отправить</button>
+				
+			</form>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+		//Функция показа
+			function show(state)
+			{
+			document.getElementById('window').style.display = state;	
+			document.getElementById('gray').style.display = state; 		
+			}	
+
+
+
+
+</script>
+</body>
+</html>
